@@ -1,0 +1,129 @@
+<!-- Resume -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Android · Steve Sun</title>
+    <meta name="Description" content="Steve Sun">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>  
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+        
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+        
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="../icons/Steve_logo.png"/>
+    <link rel="icon" type="image/png" href="../icons/Steve_logo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89012104-2');
+    </script>
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="/"><img alt="Steve logo" src="../icons/Steve_logo.png" class="s-logo"></a>
+                <h3 class="medium content-web">Steve Sun</h3>
+                <nav class="nav">
+                    <h5 class="option "><a href="../index.html">Home</a></h5>
+                    <h5 class="option "><a href="../resume.html">About</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">🧑🏽</h1>
+                <div>
+                    <h1 class="content-mobile">🧑🏽</h1>
+                    <h1>Android blog.<br>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="c6 main">
+
+        <!-- Education-->
+        <div class="section">
+            <h4 style="color: deepskyblue;" class="subtitle">Education</h4>
+        </div>
+
+    </main>
+    
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>If you get any questions or some, connect me at <a style="color: deepskyblue;" href="mailto:18629256793@163.com?subject=Hey!" target="_blank" rel="noopener">@Steve.Sun</a>.</p>
+        </div>
+        <div class="social">
+            <a href="../icons/wechat.jpg" target="_blank" rel="noopener"><img alt="Medium icon" src="../icons/wechat.png" class="icons"></a>
+            <a href="https://www.linkedin.com/in/%E6%95%AC%E8%BD%A9-%E5%AD%99-675883159/" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="../icons/linkedin.svg" class="icons"></a>
+        </div>  
+        
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+    
+</body>
+
+</html>
