@@ -1,16 +1,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0“>
+    <meta name="viewport" content="width=device-width">
     <title></title>
 
 </head>
 <body>
     <div id = "whole" style="width:fit-content;">
-        <p>   </p>
-        <img style = "transform:scaleY(0.9)" src="./head.jpeg">
-        <div style="color: darkgrey;font-family:-apple-system; margin-left: 20px;font-size: x-large;">当前时间：</div>
-        <div id="Date" style="font-weight: bolder; font-size: x-large;font-family:-apple-system; margin-top: 20px;margin-left: 20px;"></div>
+        <div style = "width: 410px;height: 180px;overflow: hidden;" ><img style="width: 100%;height: 100%;" src="./head.jpeg"></div>
+        <div style="color: darkgrey;font-family:-apple-system; margin-top: 30px;margin-left: 20px;font-size: large;">当前时间：</div>
+        <div id="Date" style="font-weight: bolder; font-size: x-large;font-family:-apple-system; margin-top: 15px;margin-left: 20px;"></div>
         <script type="text/javascript"> 
             setInterval(function(){   
             var date = new Date();
@@ -29,15 +28,17 @@
                 m = '0'+m;
             }  
             var s = date.getSeconds();
+            if (s < 10) {
+                s = '0'+s;
+            }
             var d = document.getElementById('Date');    
-              d.innerHTML=mon+'月'+day+'日'+'   '+h+':'+m+':'+s;  
+              d.innerHTML=mon+'月'+day+'日'+'      '+h+':'+m+':'+s;  
             },1000)
         </script>
-        <p style="font-family:-apple-system;margin-left: 20px;font-size: larger;">已于2020-05-23 13:47:25完成报到登记</p>
-        <p style="font-family:-apple-system;margin-left: 20px;font-size: larger;">外出时间<span style="color: gold;">2020-05-14 12:00</span>至<span style="color: gold;">2020-09-01 00:00</span></p>
-        <img src="./ma.jpeg" style="margin-left: 80px; transform: scale(0.85);">
+        <p style="font-family:-apple-system;margin-left: 20px;font-size:medium;">已于2020-05-23 13:47:25完成报到登记</p>
+        <p style="font-family:-apple-system;margin-left: 20px;font-size: medium;">外出时间<span style="color: gold;">2020-05-14 12:00</span>至<span style="color: gold;">2020-09-01 00:00</span></p>
+        <div style = "width: 410px;height: 300px;overflow: hidden;" ><img style="width: 100%;height: 100%;transform: scaleY(0.9);" src="./ma.jpeg"></div>
         <p>    </p>
-        <img src="./footer.jpeg">
-    </div>
+        <div style = "width: 410px;height: 80px;overflow: hidden;" ><img style="width: 100%;height: 100%;" src="./footer.jpeg"></div>    </div>
 </body>
 </html>
