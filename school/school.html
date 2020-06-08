@@ -1,16 +1,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0“>
+    <title></title>
 
 </head>
 <body>
-    <div id = "whole">
+    <div id = "whole" style="width:fit-content;">
         <p>   </p>
         <img src="./head.jpeg">
-        <div>当前时间：</div>
-        <div id="Date"></div>
+        <div style="color: darkgrey;font-family:-apple-system">当前时间：</div>
+        <div id="Date" style="font-weight: bolder; font-size: larger;font-family:-apple-system"></div>
         <script type="text/javascript"> 
             setInterval(function(){   
             var date = new Date();
@@ -33,8 +33,8 @@
               d.innerHTML=mon+'月'+day+'日'+'   '+h+':'+m+':'+s;  
             },1000)
         </script>
-        <p>已于2020-05-23 13:47:25完成报到登记</p>
-        <p>外出时间2020-05-14 12:00至2020-09-01 00:00</p>
+        <p style="font-family:-apple-system;">已于2020-05-23 13:47:25完成报到登记</p>
+        <p style="font-family:-apple-system">外出时间2020-05-14 12:00至2020-09-01 00:00</p>
         <img src="./ma.jpeg">
         <p>    </p>
         <img src="./footer.jpeg">
