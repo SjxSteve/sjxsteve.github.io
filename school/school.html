@@ -8,9 +8,9 @@
 <body>
     <div id = "whole" style="width:fit-content;">
         <p>   </p>
-        <img src="./head.jpeg">
-        <div style="color: darkgrey;font-family:-apple-system">当前时间：</div>
-        <div id="Date" style="font-weight: bolder; font-size: larger;font-family:-apple-system"></div>
+        <img style = "transform:scaleY(0.9)" src="./head.jpeg">
+        <div style="color: darkgrey;font-family:-apple-system; margin-left: 20px;font-size: x-large;">当前时间：</div>
+        <div id="Date" style="font-weight: bolder; font-size: x-large;font-family:-apple-system; margin-top: 20px;margin-left: 20px;"></div>
         <script type="text/javascript"> 
             setInterval(function(){   
             var date = new Date();
@@ -33,9 +33,9 @@
               d.innerHTML=mon+'月'+day+'日'+'   '+h+':'+m+':'+s;  
             },1000)
         </script>
-        <p style="font-family:-apple-system;">已于2020-05-23 13:47:25完成报到登记</p>
-        <p style="font-family:-apple-system">外出时间2020-05-14 12:00至2020-09-01 00:00</p>
-        <img src="./ma.jpeg">
+        <p style="font-family:-apple-system;margin-left: 20px;font-size: larger;">已于2020-05-23 13:47:25完成报到登记</p>
+        <p style="font-family:-apple-system;margin-left: 20px;font-size: larger;">外出时间<span style="color: gold;">2020-05-14 12:00</span>至<span style="color: gold;">2020-09-01 00:00</span></p>
+        <img src="./ma.jpeg" style="margin-left: 80px; transform: scale(0.85);">
         <p>    </p>
         <img src="./footer.jpeg">
     </div>
