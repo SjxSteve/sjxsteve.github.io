@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Document</title>
+
+</head>
+<body>
+    <div id = "whole">
+        <p>   </p>
+        <img src="./head.jpeg">
+        <div>当前时间：</div>
+        <div id="Date"></div>
+        <script type="text/javascript"> 
+            setInterval(function(){   
+            var date = new Date();
+            var year = date.getFullYear();
+            var mon = date.getMonth()+1;
+            if (mon < 10) {
+                mon = '0'+mon;
+            }
+            var day = date.getDate();
+            if (day < 10) {
+                day = '0'+day;
+            }
+            var h = date.getHours();
+            var m = date.getMinutes();
+            if (m < 10) {
+                m = '0'+m;
+            }  
+            var s = date.getSeconds();
+            var d = document.getElementById('Date');    
+              d.innerHTML=mon+'月'+day+'日'+'   '+h+':'+m+':'+s;  
+            },1000)
+        </script>
+        <p>已于2020-05-23 13:47:25完成报到登记</p>
+        <p>外出时间2020-05-14 12:00至2020-09-01 00:00</p>
+        <img src="./ma.jpeg">
+        <p>    </p>
+        <img src="./footer.jpeg">
+    </div>
+</body>
+</html>
