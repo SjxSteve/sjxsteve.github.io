@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width">
+    <title></title>
+
+</head>
+<body>
+    <div id = "whole" style="width: 400px;">
+        <div style = "width: 400px;height: 180px;overflow: hidden;" ><img style="width: 100%;height: 100%;" src="./head.jpeg"></div>
+        <div style="color: darkgrey;font-family:-apple-system; margin-top: 5px;margin-left: 20px;font-size: large;">当前时间：</div>
+        <div id="Date" style="font-weight: bolder; font-size: xx-large;font-family:-apple-system; margin-top: 15px;margin-left: 20px;"></div>
+        <script type="text/javascript"> 
+            setInterval(function(){   
+            var date = new Date();
+            var year = date.getFullYear();
+            var mon = date.getMonth()+1;
+            if (mon < 10) {
+                mon = '0'+mon;
+            }
+            var day = date.getDate();
+            if (day < 10) {
+                day = '0'+day;
+            }
+            var h = date.getHours();
+            var m = date.getMinutes();
+            if (m < 10) {
+                m = '0'+m;
+            }  
+            var s = date.getSeconds();
+            if (s < 10) {
+                s = '0'+s;
+            }
+            var d = document.getElementById('Date');    
+              d.innerHTML=mon+'月'+day+'日'+'      '+h+':'+m+':'+s;  
+            },1000)
+        </script>
+        <div style="font-family:-apple-system;margin-left: 20px;font-size:12px;">已于2020-05-23 13:47:25完成报到登记</div>
+        <div style="font-family:-apple-system;margin-left: 20px;font-size:12px;">外出时间<span style="color: gold;">2020-05-14 12:00</span>至<span style="color: gold;">2020-09-01 00:00</span></div>
+        <div style = "width: 280px;height: 280px;overflow: hidden;margin-left: 60px;" ><img style="width: 100%;height: 100%;" src="./ma.jpeg"></div>
+        <div style="font-family:-apple-system;font-size:medium;width: 290px;margin-left: 110px;">校园最安全，外出有风险</div>
+        <div style = "width: 400px;height: 60px;margin-top: 20px;border-top: 1px solid rgb(233, 230, 230);">
+            <img style="width: 95px;height: 60px;overflow: hidden;" src="first_selected.jpeg">
+            <a href="./back.html"><img style="width: 95px;height: 60px;overflow: hidden;" src="back.jpeg"></a>
+            <a href="./out.html"><img style="width: 95px;height: 60px;overflow: hidden;" src="out.jpeg"></a>
+            <img style="width: 95px;height: 60px;overflow: hidden;" src="turn.jpeg">
+        </div>
+</body>
+</html>
